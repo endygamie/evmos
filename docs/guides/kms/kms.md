@@ -22,6 +22,7 @@ You will need the following prerequisites:
 - ✅ **C compiler**: e.g. gcc, clang
 - ✅ **pkg-config**
 - ✅ **libusb** (1.0+). Install instructions for common platforms
+- ✅ **libudev**   
     - ✅ Debian/Ubuntu
 
       ```bash
@@ -59,7 +60,7 @@ The following example adds `--features=ledger` to enable Ledger  support.
 `tmkms` can be compiled directly from the git repository source code, using the following commands:
 
 ```bash
-gh repo clone iqlusioninc/tmkms && cd tmkms
+gh repo iqlusioninc/tmkms && cd tmkms
 [...]
 cargo build --release --features=ledger
 ```
